@@ -1,0 +1,79 @@
+/* Flex utilities */
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Column layout */
+.col {
+  flex: 1;
+  min-width: 0;
+  margin-right: 15px;
+}
+
+/* Field styling */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* Padding utilities */
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+/* Additional optional helpers */
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Button text style for footer buttons */
+.p-button-text {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Input field adjustments */
+input[type="text"],
+input[pInputText] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Optional basic icon inside input (if needed) */
+.p-input-icon-left {
+  position: relative;
+}
+
+.p-input-icon-left i {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.p-input-icon-left input {
+  padding-left: 2.5rem;
+}

@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\controllers\\jobofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\controllers\\jobofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\services\\joboffer\\jobofferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\services\\joboffer\\jobofferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\services\\joboffer\\ijobofferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\services\\joboffer\\ijobofferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\files\\emailtemplate\\notification.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\files\\emailtemplate\\notification.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\services\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\services\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\services\\userservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\services\\userservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|c:\\users\\anas\\desktop\\candidateconnect\\candidateconnect\\candidateconnect\\configurations\\servicesinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD7F08F-D7A9-4213-A303-94D44F7F0AA3}|CandidateConnect\\CandidateConnect.csproj|solutionrelative:candidateconnect\\configurations\\servicesinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\appsettings.json",
+              "RelativeDocumentMoniker": "CandidateConnect\\appsettings.json",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\appsettings.json",
+              "RelativeToolTip": "CandidateConnect\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T14:50:23.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "notification.html",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Files\\EmailTemplate\\notification.html",
+              "RelativeDocumentMoniker": "CandidateConnect\\Files\\EmailTemplate\\notification.html",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Files\\EmailTemplate\\notification.html",
+              "RelativeToolTip": "CandidateConnect\\Files\\EmailTemplate\\notification.html",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-27T14:02:59.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IJobOfferService.cs",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\JobOffer\\IJobOfferService.cs",
+              "RelativeDocumentMoniker": "CandidateConnect\\Services\\JobOffer\\IJobOfferService.cs",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\JobOffer\\IJobOfferService.cs",
+              "RelativeToolTip": "CandidateConnect\\Services\\JobOffer\\IJobOfferService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:36:20.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JobOfferService.cs",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\JobOffer\\JobOfferService.cs",
+              "RelativeDocumentMoniker": "CandidateConnect\\Services\\JobOffer\\JobOfferService.cs",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\JobOffer\\JobOfferService.cs",
+              "RelativeToolTip": "CandidateConnect\\Services\\JobOffer\\JobOfferService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAawDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:36:15.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JobOffersController.cs",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Controllers\\JobOffersController.cs",
+              "RelativeDocumentMoniker": "CandidateConnect\\Controllers\\JobOffersController.cs",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Controllers\\JobOffersController.cs",
+              "RelativeToolTip": "CandidateConnect\\Controllers\\JobOffersController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAASwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:34:25.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServicesInjection.cs",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Configurations\\ServicesInjection.cs",
+              "RelativeDocumentMoniker": "CandidateConnect\\Configurations\\ServicesInjection.cs",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Configurations\\ServicesInjection.cs",
+              "RelativeToolTip": "CandidateConnect\\Configurations\\ServicesInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:15:44.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\UserService\\UserService.cs",
+              "RelativeDocumentMoniker": "CandidateConnect\\Services\\UserService\\UserService.cs",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\UserService\\UserService.cs",
+              "RelativeToolTip": "CandidateConnect\\Services\\UserService\\UserService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T15:57:36.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\UserService\\IUserService.cs",
+              "RelativeDocumentMoniker": "CandidateConnect\\Services\\UserService\\IUserService.cs",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Services\\UserService\\IUserService.cs",
+              "RelativeToolTip": "CandidateConnect\\Services\\UserService\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T15:57:26.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "CandidateConnect\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\anas\\Desktop\\CandidateConnect\\CandidateConnect\\CandidateConnect\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "CandidateConnect\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA/wBoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T15:54:18.649Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

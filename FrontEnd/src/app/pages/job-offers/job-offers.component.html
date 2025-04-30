@@ -1,0 +1,122 @@
+<p-confirmdialog />
+<section
+  style="
+    background-image: url('https://static.vecteezy.com/system/resources/previews/041/713/016/non_2x/ai-generated-abstract-blurred-background-of-modern-office-with-glass-walls-shows-desks-and-chairs-with-computer-free-photo.jpg');
+  "
+  class="text-white py-20 px-6"
+>
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <!-- Page Title -->
+    <p-button icon="pi pi-plus" severity="success" label="New offer" class="ml-2" (onClick)="openNewOffer()"></p-button>
+    <h1 class="text-3xl font-bold text-indigo-800 dark:text-white mb-10 text-center">Job offers</h1>
+
+    <!-- Job Results -->
+    <div class="grid gap-6">
+      <!-- Job Card -->
+      <div
+        *ngFor="let offer of jobOffers"
+        class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 hover:shadow-lg transition-shadow"
+      >
+        <div class="flex flex-row">
+          <h2 class="text-xl font-semibold text-indigo-800 dark:text-indigo-300 mb-2">{{ offer.title }}</h2>
+          <div class="flex flex-row ml-auto">
+            <p-button
+              icon="pi pi-pencil"
+              class="mr-2"
+              [rounded]="true"
+              [text]="true"
+              severity="primary"
+              pTooltip="Edit"
+              tooltipPosition="bottom"
+              (click)="updateJobOffer(offer)"
+            ></p-button>
+            <p-button
+              icon="pi pi-trash"
+              class="mr-2"
+              [rounded]="true"
+              [text]="true"
+              severity="danger"
+              pTooltip="Delete"
+              tooltipPosition="bottom"
+              (click)="showDialogRemoveJobOffer(offer)"
+            ></p-button>
+          </div>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300 mb-2">{{ offer.description }}</p>
+        <ul class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          <li><strong>Location:</strong> {{ offer.location }}</li>
+          <li><strong>Salary:</strong> {{ offer.salary }}</li>
+          <li><strong>Experience:</strong> {{ offer.experience }}</li>
+          <div class="mt-4">
+            <span
+              class="inline-block px-3 py-1 text-sm rounded-full"
+              [ngClass]="{
+                'bg-yellow-100 text-blue-800': offer.status === 0,
+                'bg-blue-100 text-red-800': offer.status === 1
+              }"
+            >
+              {{ getStatusLabel(offer.status) }}
+            </span>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p-dialog
+  [maximizable]="true"
+  [(visible)]="isDialogOpen"
+  [style]="{ width: '900px' }"
+  header="New offer"
+  [modal]="true"
+  styleClass="p-fluid"
+  (onHide)="hideNewJobOfferDialog()"
+>
+  <ng-template pTemplate="content">
+    <div class="flex flex-row">
+      <div class="col field pr-0 pb-0">
+        <label>Title</label>
+        <input pInputText placeholder="Title" [(ngModel)]="newJobOffer.title" />
+      </div>
+      <div class="col field pr-0 pb-0">
+        <label>Description</label>
+        <input pInputText placeholder="Description" [(ngModel)]="newJobOffer.description" />
+      </div>
+      <div class="col field pr-0 pb-0">
+        <label>Location</label>
+        <input pInputText placeholder="Location" [(ngModel)]="newJobOffer.location" />
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="col field pr-0 pb-0">
+        <label>Salary</label>
+        <input pInputText placeholder="Salary" [(ngModel)]="newJobOffer.salary" />
+      </div>
+      <div class="col field pr-0 pb-0">
+        <label>Experience</label>
+        <input pInputText placeholder="Experience" [(ngModel)]="newJobOffer.experience" />
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <button
+      pButton
+      pRipple
+      label="Cancel"
+      icon="pi pi-times"
+      class="p-button-text"
+      (click)="hideNewJobOfferDialog()"
+    ></button>
+    <button
+      pButton
+      pRipple
+      [label]="!isUpdate ? 'Add' : 'Edit'"
+      [icon]="!isUpdate ? 'pi pi-plus' : 'pi pi-pencil'"
+      class="p-button-text"
+      [disabled]="!isNewJobOfferValid()"
+      (click)="sendNewOffer()"
+    ></button>
+  </ng-template>
+</p-dialog>

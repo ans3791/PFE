@@ -1,0 +1,262 @@
+[
+  {
+    "ContainingType": "CandidateConnect.Controllers.JobOffersController",
+    "Method": "CreateJobOfferAsync",
+    "RelativePath": "api/JobOffers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobOffer",
+        "Type": "CandidateConnect.Models.JobOfferModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.JobOffersController",
+    "Method": "GetJobOffersAsync",
+    "RelativePath": "api/JobOffers/{count}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.JobOffersController",
+    "Method": "UpdateJobOfferAsync",
+    "RelativePath": "api/JobOffers/{idJobOffer}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idJobOffer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobOffer",
+        "Type": "CandidateConnect.Models.JobOfferModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.JobOffersController",
+    "Method": "DeleteJobOfferAsync",
+    "RelativePath": "api/JobOffers/{idJobOffer}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idJobOffer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.JobOffersController",
+    "Method": "GetApplicationsAsync",
+    "RelativePath": "api/JobOffers/applications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.JobOffersController",
+    "Method": "UpdateApplicationStatus",
+    "RelativePath": "api/JobOffers/applications/{applicationId}/{newStatus}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "applicationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newStatus",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.JobOffersController",
+    "Method": "ApplyAsync",
+    "RelativePath": "api/JobOffers/apply/{jobOfferId}/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobOfferId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.UsersController",
+    "Method": "CreateAccountAsync",
+    "RelativePath": "api/Users/create-account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Summary",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TechnicalSkills",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Experience",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CvFilename",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SignInDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Offers",
+        "Type": "System.Collections.Generic.List\u00601[[CandidateConnect.Models.JobOfferUserModel, CandidateConnect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cvFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.UsersController",
+    "Method": "DownloadCvAsync",
+    "RelativePath": "api/Users/cv/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.UsersController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/Users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "CandidateConnect.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateConnect.Controllers.UsersController",
+    "Method": "ProfileAsync",
+    "RelativePath": "api/Users/profile/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

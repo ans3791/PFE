@@ -1,0 +1,44 @@
+<section
+  style="
+    background-image: url('https://static.vecteezy.com/system/resources/previews/041/713/016/non_2x/ai-generated-abstract-blurred-background-of-modern-office-with-glass-walls-shows-desks-and-chairs-with-computer-free-photo.jpg');
+  "
+  class= "text-white py-20 px-6 text-center"
+>
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-extrabold mb-4">Kickstart Your Career Journey</h1>
+    <p class="text-lg mb-6">
+      Track your applications, connect with recruiters, and land your dream role — all in one place.
+    </p>
+    <button
+      (click)="redirectTocreateAccount()"
+      class="cursor-pointer relative inline-flex justify-center items-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+    >
+      <span
+        class="relative px-6 py-3 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent"
+      >
+        Create an Account
+      </span>
+    </button>
+  </div>
+</section>
+
+<!-- Job Offers Section -->
+<section class="bg-gray-100 dark:bg-gray-900 py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-10">Latest Job Offers</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Job Card -->
+      <div *ngFor="let offer of jobOffers" class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6">
+        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">{{ offer.title }}</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">{{ offer.description }}</p>
+        <button
+          (click)="apply(offer.id)"
+          class="cursor-pointer text-indigo-700 dark:text-indigo-300 font-medium hover:underline"
+        >
+          Apply Now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

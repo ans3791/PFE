@@ -1,0 +1,136 @@
+<p-toast></p-toast>
+<div class="min-h-screen flex flex-col font-sans">
+  <nav class="bg-gray-900 sticky top-0 z-10 shadow-md">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <a href="/" class="flex items-center">
+            <img
+              src="assets/logo.png"
+              class="h-9 mr-3"
+              alt="Logo"
+            />
+          </a>
+
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <button
+                (click)="redirectToHome()"
+                class="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-500 hover:text-white"
+              >
+                Home
+              </button>
+              <button
+                (click)="redirectToAbout()"
+                class="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-500 hover:text-white"
+              >
+                About us
+              </button>
+              <button
+                *ngIf="userService.isLogged && userService.user?.type !== UserType.Recruiter"
+                (click)="redirectToSearch()"
+                class="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-500 hover:text-white"
+              >
+                Search for a job
+              </button>
+              <button
+                *ngIf="userService.isLogged && userService.user?.type !== UserType.Recruiter"
+                (click)="redirectToProfile()"
+                class="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-500 hover:text-white"
+              >
+                Profile
+              </button>
+              <button
+                *ngIf="userService.isLogged && userService.user?.type === UserType.Recruiter"
+                (click)="redirectToApplications()"
+                class="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-500 hover:text-white"
+              >
+                Applications
+              </button>
+              <button
+                *ngIf="userService.isLogged && userService.user?.type === UserType.Recruiter"
+                (click)="redirectToJobOffers()"
+                class="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-500 hover:text-white"
+              >
+                Job Offers
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avatar or Sign In -->
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2">
+          <button
+            *ngIf="!userService.isLogged"
+            (click)="redirectToLogin()"
+            class="cursor-pointer text-white bg-gradient-to-r from-purple-600 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          >
+            Sign In
+          </button>
+
+          <!-- If user is signed in -->
+          <div *ngIf="userService.isLogged" class="relative inline-block text-left">
+            <button
+              type="button"
+              (click)="toggleDropdown()"
+              class="cursor-pointer flex items-center justify-center w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 focus:outline-none"
+            >
+              <svg class="w-6 h-6 text-gray-700 dark:text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5Zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5Z"
+                />
+              </svg>
+            </button>
+
+            <div
+              *ngIf="dropdownOpen"
+              class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5"
+            >
+              <div class="px-4 py-3">
+                <p class="text-sm text-gray-500 dark:text-gray-300">Signed in as</p>
+                <p class="truncate text-sm font-medium text-gray-900 dark:text-white">
+                  {{ userService.user?.email }}
+                </p>
+              </div>
+              <div class="border-t border-gray-200 dark:border-gray-700"></div>
+              <button
+                (click)="signOut()"
+                class="cursor-pointer w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:text-red-400 dark:hover:bg-gray-700"
+              >
+                Sign out
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="flex-grow">
+    <router-outlet></router-outlet>
+  </div>
+  
+  <footer class="dark:bg-gray-800 shadow-inner">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between">
+      <a href="/" class="flex items-center mb-4 sm:mb-0">
+        <img
+          src="assets/logo.png"
+          class="h-24 mr-3"
+          alt="Logo"
+        />
+        <span class="text-gray-700 dark:text-white font-bold text-lg hidden sm:block">Candidate Connect</span>
+      </a>
+      <ul class="flex flex-wrap justify-center sm:justify-end gap-4 text-sm text-gray-500 dark:text-gray-400">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">Licensing</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+    <div
+      class="border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-500 dark:text-gray-400 py-4"
+    >
+      © 2025 <a href="/" class="hover:underline font-semibold">Candidate Connect™</a>. All Rights Reserved.
+    </div>
+  </footer>
+</div>
